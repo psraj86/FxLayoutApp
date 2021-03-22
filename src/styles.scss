@@ -1,1 +1,57 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+
+/* Add application styles & imports to this file! */
+html,body{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+.bounds {
+  background-color:#ddd;
+  height :800px;
+}
+
+.sec1 {
+  background: red;
+  color:white;
+  text-transform: uppercase
+}
+
+.sec2 {
+  background: yellow;
+  color:blue;
+
+}
+
+.sec3 {
+  background: blue;
+  color:white;
+  text-transform: uppercase
+}
+
+.sec1, .sec2, .sec3 {
+  padding-top:20px;
+  text-align:center
+}
+
+.content {
+  min-width: 300px;
+  /*height: 400px;*/
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+$mat-card-header-size: 40px !default;
+.mat-card-avatar {
+  height: $mat-card-header-size;
+  width: $mat-card-header-size;
+  border-radius: 50%;
+  flex-shrink: 0;
+  object-fit: cover;
+  background: #000;
+}

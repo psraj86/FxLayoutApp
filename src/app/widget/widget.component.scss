@@ -1,0 +1,16 @@
+.example-card {
+  width: 400px;
+  height: 350px;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+
+.mat-display-1, .mat-typography .mat-display-1 {
+  font: 400 34px/40px Roboto, "Helvetica Neue", sans-serif;
+  letter-spacing: normal;
+  margin: 12px 0px;
+}

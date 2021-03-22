@@ -1,0 +1,66 @@
+<div
+  class="p-1"
+  fxLayout="column"
+  fxLayoutAlign="space-between center"
+  fxFill
+  fxLayoutGap="10px"
+>
+  <div
+    fxFlex="20"
+    fxFill
+    fxLayoutAlign="center center"
+    class="text-white"
+    style="background-color: #009688"
+  >
+    1 One
+  </div>
+  <div
+  fxLayout="row"
+  fxFlex="60"
+    fxFill
+    class="text-white"
+    fxLayoutGap="10px"
+  >
+    <div fxFlex="15" fxLayoutAlign="center center" class="bg-warning">Peter</div>
+    <div fxFlex="85" fxLayoutAlign="center center" class="bg-danger">Singh</div>
+  </div>
+  <div
+    fxFlex="20"
+    fxFill
+    fxLayoutAlign="center center"
+    class="width-100 text-white"
+    style="background-color: #9c27b0"
+  >
+    3 Three
+  </div>
+</div>
+<br/>
+<div fxLayout="row wrap" fxFill>
+  <div fxFlex="30" class="bg-primary">fxFlex="30"</div>
+  <div fxFlex="45" class="bg-warning">fxFlex="45"</div>
+  <div fxFlex="19" class="bg-danger">fxFlex="19"</div>
+  <div fxFlex="33" class="bg-info">fxFlex="33"</div>
+  <div fxFlex="67" class="bg-secondary">fxFlex="67"</div>
+  <div fxFlex="50" class="bg-success">fxFlex="50"</div>
+  <div fxFlex class="bg-dark">fxFlex</div>
+</div>
+
+<br/>
+<mat-card class="bg-info text-white">
+  <mat-card-title>User Form</mat-card-title>
+  <mat-card-content class="text-white" fxLayout="row wrap" fxLayoutGap="20px grid">
+    <mat-form-field fxFlex="50">
+      <input type="text" matInput placeholder="Name"/>
+    </mat-form-field>
+    <mat-form-field fxFlex="50">
+      <input type="text" matInput placeholder="Occupation"/>
+    </mat-form-field>
+    <mat-form-field fxFlex>
+      <input type="text" matInput placeholder="Company"/>
+    </mat-form-field>
+  </mat-card-content>
+  <mat-card-actions fxLayout="row" fxLayoutAlign="end">
+    <button mat-raised-button color="primary">Save</button>
+    <button mat-raised-button color="warn">Cancel</button>
+  </mat-card-actions>
+</mat-card>

@@ -1,0 +1,35 @@
+<mat-card class="example-card">
+  <mat-card-title fxLayoutAlign="space-between center">
+    <span>{{ data.title }}</span>
+    <button mat-icon-button color="primary">
+      <span>More</span>
+      <mat-icon>more_vert</mat-icon>
+    </button>
+  </mat-card-title>
+
+  <mat-card-content fxLayout="column">
+    <ng-container *ngIf="!data.data">
+      <span class="bold">AMOUNT DUE</span>
+      <span class="mat-display-1">{{ data.due }}</span>
+      <span class="mb-5"
+        >{{ data.description }} <strong>{{ data.dueDate }}</strong></span
+      >
+      <button class="mb-3" mat-raised-button color="primary">Make a Payment</button>
+      <a mat-button color="primary">Go To Billing</a>
+    </ng-container>
+    <ng-container *ngIf="data.data">
+      <mat-list>
+        <mat-list-item *ngFor="let item of data.data">
+          <mat-icon mat-list-icon>{{ item.icon }}</mat-icon>
+          <div mat-line>{{ item.title }}</div>
+          <div mat-line mat-subheader>{{ item.subTitle }}</div>
+        </mat-list-item>
+        <!-- <mat-list-item *ngFor="let note of notes">
+          <mat-icon mat-list-icon>note</mat-icon>
+          <div mat-line>{{note.name}}</div>
+          <div mat-line> {{note.updated | date}} </div>
+        </mat-list-item> -->
+      </mat-list>
+    </ng-container>
+  </mat-card-content>
+</mat-card>
